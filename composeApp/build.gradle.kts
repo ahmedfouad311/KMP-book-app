@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
@@ -29,7 +28,8 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
-        }
+            implementation(libs.koin.android)
+            implementation(libs.koin.androidx.compose)        }
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
@@ -39,6 +39,11 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation (libs.koin.compose)
+            implementation(libs.koin.compose.viewmodel)
+            implementation(compose.materialIconsExtended)
+            api(libs.koin.core)
+            implementation(libs.bundles.coil)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -76,4 +81,3 @@ android {
 dependencies {
     debugImplementation(compose.uiTooling)
 }
-
