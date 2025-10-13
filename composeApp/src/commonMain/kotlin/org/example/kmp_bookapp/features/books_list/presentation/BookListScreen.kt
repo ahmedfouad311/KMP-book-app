@@ -226,7 +226,6 @@ fun BookListScreen(
                                         text = stringResource(Res.string.no_favourite_books),
                                         style = MaterialTheme.typography.headlineSmall,
                                         textAlign = TextAlign.Center,
-                                        color = MaterialTheme.colorScheme.error
                                     )
                                 } else {
                                     BookList(
