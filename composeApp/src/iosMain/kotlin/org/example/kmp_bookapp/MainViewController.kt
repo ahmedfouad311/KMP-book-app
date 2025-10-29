@@ -1,11 +1,11 @@
 package org.example.kmp_bookapp
 
-import androidx.compose.runtime.remember
 import androidx.compose.ui.window.ComposeUIViewController
-import io.ktor.client.engine.darwin.Darwin
+import org.example.kmp_bookapp.app.App
+import org.example.kmp_bookapp.di.initKoin
 
-fun MainViewController() = ComposeUIViewController { App(
-    engine = remember {
-        Darwin.create()
+fun MainViewController() = ComposeUIViewController (
+    configure = {
+        initKoin()
     }
-) }
+) { App() }

@@ -13,7 +13,8 @@ private const val BASE_URL = "https://openlibrary.org"
 class KtorRemoteBookDataSource (
     private val client: HttpClient
 ) : RemoteBookDataSource {
-    override suspend fun searchBooks(
+    override
+    suspend fun searchBooks(
         query: String,
         resultLimit: Int?
     ): Result<SearchResponseDto, DataError.Remote>{

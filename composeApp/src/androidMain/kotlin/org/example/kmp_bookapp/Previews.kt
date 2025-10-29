@@ -7,9 +7,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import org.example.kmp_bookapp.features.books_list.domain.Book
 import org.example.kmp_bookapp.features.books_list.presentation.BookListScreen
 import org.example.kmp_bookapp.features.books_list.presentation.BookListState
-import org.example.kmp_bookapp.features.books_list.presentation.books
 import org.example.kmp_bookapp.features.books_list.presentation.components.BookSearchBar
 
 @Preview
@@ -27,6 +27,22 @@ private fun BookSearchBarPreview() {
             modifier = Modifier.fillMaxWidth()
         )
     }
+}
+
+private val books = (1 .. 100).map {
+    Book(
+        id = it.toString(),
+        title = "Book Title $it",
+        authors = listOf("Ahmed Fouad"),
+        imageUrl = "https://test.com",
+        description = "Description",
+        averageRating = 4.6789,
+        languages = emptyList(),
+        firstPublishYear = "2020",
+        numPages = 100,
+        numEditions = 5,
+        ratingCount = 1234
+    )
 }
 
 @Preview

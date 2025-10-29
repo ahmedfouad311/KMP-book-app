@@ -73,8 +73,8 @@ fun BookListScreen(
 
     val pagerState = rememberPagerState { 2 }
 
-
     val searchResultListState = rememberLazyListState()
+
     val favouritesListState = rememberLazyListState()
 
     LaunchedEffect(state.searchResults){
