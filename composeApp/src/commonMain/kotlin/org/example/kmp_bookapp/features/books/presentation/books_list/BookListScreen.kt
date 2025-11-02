@@ -1,4 +1,4 @@
-package org.example.kmp_bookapp.features.books_list.presentation
+package org.example.kmp_bookapp.features.books.presentation.books_list
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -40,9 +40,9 @@ import kmpbookapp.composeapp.generated.resources.search_results
 import org.example.kmp_bookapp.core.presentation.DarkBlue
 import org.example.kmp_bookapp.core.presentation.DesertWhite
 import org.example.kmp_bookapp.core.presentation.SandYellow
-import org.example.kmp_bookapp.features.books_list.domain.Book
-import org.example.kmp_bookapp.features.books_list.presentation.components.BookList
-import org.example.kmp_bookapp.features.books_list.presentation.components.BookSearchBar
+import org.example.kmp_bookapp.features.books.domain.Book
+import org.example.kmp_bookapp.features.books.presentation.books_list.components.BookList
+import org.example.kmp_bookapp.features.books.presentation.books_list.components.BookSearchBar
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
 

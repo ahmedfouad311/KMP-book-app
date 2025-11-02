@@ -1,6 +1,6 @@
-package org.example.kmp_bookapp.features.books_list.presentation
+package org.example.kmp_bookapp.features.books.presentation.books_list
 
-import org.example.kmp_bookapp.features.books_list.domain.Book
+import org.example.kmp_bookapp.features.books.domain.Book
 
 interface BookListAction {
     data class OnQueryChange(val query: String) : BookListAction

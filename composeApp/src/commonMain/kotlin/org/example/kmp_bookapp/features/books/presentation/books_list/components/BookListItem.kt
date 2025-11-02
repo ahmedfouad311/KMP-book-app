@@ -1,4 +1,4 @@
-package org.example.kmp_bookapp.features.books_list.presentation.components
+package org.example.kmp_bookapp.features.books.presentation.books_list.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -36,7 +36,7 @@ import coil3.compose.rememberAsyncImagePainter
 import kmpbookapp.composeapp.generated.resources.Res
 import kmpbookapp.composeapp.generated.resources.book_error
 import org.example.kmp_bookapp.core.presentation.LightBlue
-import org.example.kmp_bookapp.features.books_list.domain.Book
+import org.example.kmp_bookapp.features.books.domain.Book
 import org.jetbrains.compose.resources.painterResource
 import kotlin.math.round
 

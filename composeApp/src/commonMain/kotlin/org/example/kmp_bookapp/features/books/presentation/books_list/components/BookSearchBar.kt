@@ -1,4 +1,4 @@
-package org.example.kmp_bookapp.features.books_list.presentation.components
+package org.example.kmp_bookapp.features.books.presentation.books_list.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.background

@@ -1,4 +1,4 @@
-package org.example.kmp_bookapp.features.books_list.presentation.components
+package org.example.kmp_bookapp.features.books.presentation.books_list.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -12,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import org.example.kmp_bookapp.features.books_list.domain.Book
+import org.example.kmp_bookapp.features.books.domain.Book
 
 @Composable
 fun BookList(

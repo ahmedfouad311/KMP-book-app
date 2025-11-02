@@ -1,8 +1,8 @@
-package org.example.kmp_bookapp.features.books_list.data.network
+package org.example.kmp_bookapp.features.books.data.network
 
 import org.example.kmp_bookapp.core.domain.DataError
 import org.example.kmp_bookapp.core.domain.Result
-import org.example.kmp_bookapp.features.books_list.data.dto.SearchResponseDto
+import org.example.kmp_bookapp.features.books.data.dto.SearchResponseDto
 
 interface RemoteBookDataSource {
     suspend fun searchBooks(

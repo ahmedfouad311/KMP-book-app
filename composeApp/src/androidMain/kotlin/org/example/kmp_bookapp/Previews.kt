@@ -7,10 +7,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import org.example.kmp_bookapp.features.books_list.domain.Book
-import org.example.kmp_bookapp.features.books_list.presentation.BookListScreen
-import org.example.kmp_bookapp.features.books_list.presentation.BookListState
-import org.example.kmp_bookapp.features.books_list.presentation.components.BookSearchBar
+import org.example.kmp_bookapp.features.books.domain.Book
+import org.example.kmp_bookapp.features.books.presentation.books_list.BookListScreen
+import org.example.kmp_bookapp.features.books.presentation.books_list.BookListState
+import org.example.kmp_bookapp.features.books.presentation.books_list.components.BookSearchBar
+
 
 @Preview
 @Composable

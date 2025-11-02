@@ -1,7 +1,7 @@
-package org.example.kmp_bookapp.features.books_list.presentation
+package org.example.kmp_bookapp.features.books.presentation.books_list
 
 import org.example.kmp_bookapp.core.presentation.UiText
-import org.example.kmp_bookapp.features.books_list.domain.Book
+import org.example.kmp_bookapp.features.books.domain.Book
 
 data class BookListState(
     val searchQuery: String = "",

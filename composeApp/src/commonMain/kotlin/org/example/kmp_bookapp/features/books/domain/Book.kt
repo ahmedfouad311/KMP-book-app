@@ -1,4 +1,4 @@
-package org.example.kmp_bookapp.features.books_list.domain
+package org.example.kmp_bookapp.features.books.domain
 
 data class Book(
     val id: String,

@@ -1,6 +1,6 @@
 @file:OptIn(FlowPreview::class)
 
-package org.example.kmp_bookapp.features.books_list.presentation
+package org.example.kmp_bookapp.features.books.presentation.books_list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -20,8 +20,9 @@ import kotlinx.coroutines.launch
 import org.example.kmp_bookapp.core.domain.onError
 import org.example.kmp_bookapp.core.domain.onSuccess
 import org.example.kmp_bookapp.core.presentation.toUiText
-import org.example.kmp_bookapp.features.books_list.domain.Book
-import org.example.kmp_bookapp.features.books_list.domain.repository.BookRepository
+import org.example.kmp_bookapp.features.books.domain.Book
+import org.example.kmp_bookapp.features.books.domain.repository.BookRepository
+
 
 class BookListViewModel(
     private val bookRepository: BookRepository
@@ -73,6 +74,7 @@ class BookListViewModel(
                 when {
                     query.isBlank() -> {
                         _state.update { it.copy(
+                            isLoading = false,
                             errorMessage = null,
                             searchResults = cachedBooks
                         ) }

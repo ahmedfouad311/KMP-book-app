@@ -1,4 +1,4 @@
-package org.example.kmp_bookapp.features.books_list.data.dto
+package org.example.kmp_bookapp.features.books.data.dto
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
