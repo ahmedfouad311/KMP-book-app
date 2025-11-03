@@ -30,7 +30,7 @@ import kmpbookapp.composeapp.generated.resources.description_unavailable
 import kmpbookapp.composeapp.generated.resources.languages
 import kmpbookapp.composeapp.generated.resources.pages
 import kmpbookapp.composeapp.generated.resources.rating
-import kmpbookapp.composeapp.generated.resources.synopsis
+import kmpbookapp.composeapp.generated.resources.description
 import org.example.kmp_bookapp.core.presentation.SandYellow
 import org.example.kmp_bookapp.features.books.presentation.book_details.components.BlurredImageBackground
 import org.example.kmp_bookapp.features.books.presentation.book_details.components.BookChip
@@ -154,7 +154,7 @@ private fun BookDetailsScreen(
                     }
                 }
                 Text(
-                    text = stringResource(Res.string.synopsis),
+                    text = stringResource(Res.string.description),
                     style = MaterialTheme.typography.titleLarge,
                     modifier = Modifier
                         .align(Alignment.Start)

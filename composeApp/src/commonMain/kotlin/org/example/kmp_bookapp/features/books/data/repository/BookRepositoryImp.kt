@@ -14,10 +14,18 @@ class BookRepositoryImp (
     override
     suspend fun searchBooks(
         query: String
-    ): Result<List<Book>, DataError.Remote>{
+    ): Result<List<Book>, DataError.Remote> {
         return remoteDataSource.searchBooks(query)
             .map { dto ->
                 dto.results.map { it.tooBook() }
         }
+    }
+
+    override
+    suspend fun getBookDescription(
+        bookId: String
+    ) : Result<String?, DataError> {
+        return remoteDataSource.getBookDetails(bookId)
+            .map { it.description }
     }
 }
