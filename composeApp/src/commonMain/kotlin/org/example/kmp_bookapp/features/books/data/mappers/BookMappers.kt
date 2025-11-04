@@ -1,5 +1,6 @@
-package org.example.kmp_bookapp.core.mappers
+package org.example.kmp_bookapp.features.books.data.mappers
 
+import org.example.kmp_bookapp.features.books.data.database.BookEntity
 import org.example.kmp_bookapp.features.books.data.dto.SearchedBookDto
 import org.example.kmp_bookapp.features.books.domain.Book
 
@@ -21,5 +22,21 @@ fun SearchedBookDto.tooBook(): Book {
         ratingCount = ratingsCount,
         numPages = numPagesMedian,
         numEditions = numEditions ?: 0,
+    )
+}
+
+fun Book.toBookEntity() : BookEntity {
+    return BookEntity(
+        id= id,
+        title = title,
+        description = description,
+        imageUrl = imageUrl,
+        languages = languages,
+        authors = authors,
+        firstPublishYear = firstPublishYear,
+        ratingAverage = averageRating,
+        ratingCount = ratingCount,
+        numPagesMedian = numPages,
+        numEdition = numEditions
     )
 }

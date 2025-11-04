@@ -3,7 +3,7 @@ package org.example.kmp_bookapp.features.books.data.repository
 import org.example.kmp_bookapp.core.domain.DataError
 import org.example.kmp_bookapp.core.domain.Result
 import org.example.kmp_bookapp.core.domain.map
-import org.example.kmp_bookapp.core.mappers.tooBook
+import org.example.kmp_bookapp.features.books.data.mappers.tooBook
 import org.example.kmp_bookapp.features.books.data.network.RemoteBookDataSource
 import org.example.kmp_bookapp.features.books.domain.Book
 import org.example.kmp_bookapp.features.books.domain.repository.BookRepository
